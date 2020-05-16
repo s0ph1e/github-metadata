@@ -43,6 +43,7 @@ module Jekyll
       private def_delegator Jekyll::GitHubMetadata, :repository
 
       def_delegator :repository, :owner_public_repositories,   :public_repositories
+      def_delegator :repository, :all_public_repositories,     :all_public_repositories
       def_delegator :repository, :organization_public_members, :organization_members
       def_delegator :repository, :name,                        :project_title
       def_delegator :repository, :tagline,                     :project_tagline
